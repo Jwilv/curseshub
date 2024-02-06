@@ -1,5 +1,6 @@
 import { Eclipse } from "lucide-react"
 import Brand from "./components/Brand"
+import { SidebarRoutes } from "./components/SidebarRoutes"
 
 
 const Sidebar = () => {
@@ -9,6 +10,9 @@ const Sidebar = () => {
         >
             <div className="p-6">
                 <Brand />
+            </div>
+            <div className="flex flex-col w-full">
+                <SidebarRoutes />
             </div>
         </div>
     )
