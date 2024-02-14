@@ -6,12 +6,12 @@ import { SidebarItem } from './SidebarItem';
 const guestRoutes = [
     {
         icon: Layout,
-        name: "Dashboard",
+        label: "Dashboard",
         href: '/',
     },
     {
         icon: Compass,
-        name: "Browse",
+        label: "Browse",
         href: '/search',
     }
 ]
@@ -25,7 +25,7 @@ export const SidebarRoutes = () => {
             {
                 routes.map((route) => (
                     <SidebarItem
-                        key={route.name}
+                        key={route.label}
                         {...route}
                     />
                 ))
